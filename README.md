@@ -1,6 +1,6 @@
-# RemediationToolkit
+# Intune Remediation Toolkit
 
-A PowerShell **module** for backing up and deploying **Intune remediation scripts**
+A PowerShell **module** (`IntuneRemediationToolkit`) for backing up and deploying **Intune remediation scripts**
 (a.k.a. *proactive remediations* / *device health scripts*) via the Microsoft Graph API.
 
 It gives you a round-trip workflow: **export → edit / version in Git → publish**.
@@ -28,16 +28,16 @@ folder autoloads by name):
 ```powershell
 # From the repo root
 $dest = Join-Path ([Environment]::GetFolderPath('MyDocuments')) 'PowerShell\Modules'
-Copy-Item .\module\RemediationToolkit -Destination $dest -Recurse -Force
+Copy-Item .\module\IntuneRemediationToolkit -Destination $dest -Recurse -Force
 
-Import-Module RemediationToolkit
-Get-Command -Module RemediationToolkit
+Import-Module IntuneRemediationToolkit
+Get-Command -Module IntuneRemediationToolkit
 ```
 
 Or import it directly from the repo without installing:
 
 ```powershell
-Import-Module .\module\RemediationToolkit\RemediationToolkit.psd1
+Import-Module .\module\IntuneRemediationToolkit\IntuneRemediationToolkit.psd1
 ```
 
 ---
@@ -207,9 +207,9 @@ create — when present, `-Create` assigns the script after creating it:
 ```
 Remediation-Retrevial/
 ├─ module/
-│  └─ RemediationToolkit/                # the PowerShell module (recommended)
-│     ├─ RemediationToolkit.psd1         # manifest (version, author, RequiredModules)
-│     ├─ RemediationToolkit.psm1         # loader
+│  └─ IntuneRemediationToolkit/          # the PowerShell module (recommended)
+│     ├─ IntuneRemediationToolkit.psd1   # manifest (version, author, RequiredModules)
+│     ├─ IntuneRemediationToolkit.psm1   # loader
 │     ├─ Public/                         # exported commands
 │     ├─ Private/                        # internal helpers
 │     └─ en-US/about_RemediationToolkit.help.txt
@@ -255,7 +255,7 @@ Show-RemediationToolkitHelp                              # full colorized refere
 Show-RemediationToolkitHelp -Command Publish-IntuneRemediation   # one command in detail
 Get-Help Publish-IntuneRemediation -Full                # native comment-based help
 Get-Help about_RemediationToolkit                        # concept topic
-Get-Command -Module RemediationToolkit                   # list all commands
+Get-Command -Module IntuneRemediationToolkit             # list all commands
 ```
 
 ---

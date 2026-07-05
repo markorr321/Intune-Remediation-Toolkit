@@ -1,5 +1,5 @@
 ﻿# ============================================================================
-#  RemediationToolkit module loader
+#  IntuneRemediationToolkit module loader
 #  Dot-sources every Private helper first, then every Public function, then
 #  exports the public functions and the Push-IntuneRemediation alias.
 # ============================================================================

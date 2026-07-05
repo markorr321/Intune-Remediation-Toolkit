@@ -6,8 +6,8 @@ SHORT DESCRIPTION
     scripts via Microsoft Graph - from the command line or an interactive menu.
 
 LONG DESCRIPTION
-    RemediationToolkit gives you a round-trip workflow for Intune remediation
-    scripts:
+    IntuneRemediationToolkit gives you a round-trip workflow for Intune
+    remediation scripts:
 
         export  ->  edit / version in Git  ->  publish
 
@@ -92,7 +92,7 @@ SEE ALSO
     Show-RemediationToolkitHelp
     Get-Help Export-IntuneRemediation -Full
     Get-Help Publish-IntuneRemediation -Full
-    Get-Command -Module RemediationToolkit
+    Get-Command -Module IntuneRemediationToolkit
 
 KEYWORDS
     Intune Remediation ProactiveRemediation DeviceHealthScript Graph

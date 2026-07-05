@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    Shows a comprehensive, colorized help reference for the RemediationToolkit module.
+    Shows a comprehensive, colorized help reference for the IntuneRemediationToolkit module.
 
 .DESCRIPTION
     Prints an at-a-glance reference covering every command, common workflows, the
@@ -57,7 +57,7 @@ function Show-RemediationToolkitHelp {
     }
 
     Write-Host ""
-    Write-Host "  RemediationToolkit" -ForegroundColor $h1
+    Write-Host "  Intune Remediation Toolkit" -ForegroundColor $h1
     Write-Host "  Export, edit, and publish Intune proactive remediation (device" -ForegroundColor $dim
     Write-Host "  health) scripts via Microsoft Graph - CLI or interactive menu." -ForegroundColor $dim
     Write-Host "  Author: Mark Orr" -ForegroundColor $dim
@@ -186,6 +186,6 @@ function Show-RemediationToolkitHelp {
     Write-Host "    Show-RemediationToolkitHelp -Command <name>   # detailed per-command help" -ForegroundColor $ex
     Write-Host "    Get-Help <command> -Full                       # native help" -ForegroundColor $ex
     Write-Host "    Get-Help about_RemediationToolkit              # concept topic" -ForegroundColor $ex
-    Write-Host "    Get-Command -Module RemediationToolkit         # list commands" -ForegroundColor $ex
+    Write-Host "    Get-Command -Module IntuneRemediationToolkit   # list commands" -ForegroundColor $ex
     Write-Host ""
 }
